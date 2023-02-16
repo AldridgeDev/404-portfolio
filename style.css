@@ -32,6 +32,26 @@ nav a:hover {
     color: var(--accent2);
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--secondary);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--accent1);
+  }
+
 /* #introduction */
 
 #introduction {
@@ -43,10 +63,13 @@ nav a:hover {
     padding: 3%;
 }
 
+#introduction .intro-desc h1 {
+    font-size: 2.5em;
+}
+
 #introduction .intro-desc h1 span {
     background-image: linear-gradient(180deg,transparent 70%, var(--secondary) 0);
     background-size: 100% 100%;
-    font-size: 2em;
 }
 
 #introduction .intro-desc img {
@@ -100,9 +123,7 @@ nav a:hover {
 }
 
 .project-gallery .project-row .project-title-and-btn button {
-    background: #f4f4f4;
-    /*opacity: 0.5;
-    */border: none;
+    background: #f4f4f4;border: none;
     font-size: 1.25em;
     padding: 10px;
     text-decoration: none;
@@ -121,7 +142,13 @@ nav a:hover {
     cursor: pointer;
 }
 
-.project-gallery .project-row img {
+.project-gallery .project-row div.data {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+}
+
+.project-gallery .project-row img.project-img{
     width: 100%;
     max-width: 300px;
     height: 200px;
@@ -142,7 +169,7 @@ nav a:hover {
     -webkit-filter: grayscale(0);
 }
 
-/* footer */
+/* #footer */
 
 footer .social-media-links {
     display: flex;
